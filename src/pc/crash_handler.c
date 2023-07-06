@@ -3,7 +3,7 @@
 
 char gLastRemoteBhv[256] = "";
 
-#if (defined(_WIN32) || defined(__linux__)) && !defined(WAPI_DUMMY) && !defined(__ANDROID__)
+#if defined(_WIN32) && !defined(WAPI_DUMMY)
 
 #ifdef HAVE_SDL2
 #include <SDL2/SDL.h>

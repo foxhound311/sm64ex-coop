@@ -586,6 +586,7 @@ endif
 # Luigi and wario sounds don't work on 32-bit right now
 # And the audio code is so terrible I don't care enough to figure it out at the moment
 ifeq ($(TARGET_BITS), 32)
+ifeq ($(TARGET_FOSS),0)
   _ := $(shell rm -rf sound/samples/sfx_custom_luigi/*.aiff)
   _ := $(shell rm -rf sound/samples/sfx_custom_luigi_peach/*.aiff)
   _ := $(shell rm -rf sound/samples/sfx_custom_wario/*.aiff)
@@ -593,7 +594,7 @@ ifeq ($(TARGET_BITS), 32)
 
 # Copy missing character sounds from mario sound banks
 _ := $(shell $(PYTHON) $(TOOLS_DIR)/copy_mario_sounds.py)
-
+endif
 endif
 
 # Copy missing instrument samples from the music sound banks

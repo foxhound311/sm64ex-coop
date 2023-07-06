@@ -6,7 +6,8 @@ RUN apt-get update && \
         bsdmainutils \
         libreadline-dev \
         libsdl2-dev \
-        libglew-dev
+        libglew-dev \
+        libcurl4-openssl-dev
 
 WORKDIR /sm64
 
