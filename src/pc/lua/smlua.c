@@ -21,17 +21,18 @@ void smlua_mod_error(void) {
     struct Mod* mod = gLuaActiveMod;
     if (mod == NULL) { mod = gLuaLastHookMod; }
     if (mod == NULL) { return; }
-    //char txt[255] = { 0 };
-    //snprintf(txt, 254, "'%s' has script errors!", mod->name);
-    //djui_lua_error(txt);
+    char txt[255] = { 0 };
+#ifdef TOUCH_CONTROLS
+    snprintf(txt, 254, "'%s' has script errors! Enable the Lua button in Touch Binds to view.", mod->name);
+#else
+    snprintf(txt, 254, "'%s' has script errors!", mod->name);
+#endif
+    djui_lua_error(txt);
 }
 
 int smlua_error_handler(UNUSED lua_State* L) {
     if (lua_type(L, -1) == LUA_TSTRING) {
         LOG_LUA("%s", lua_tostring(L, -1));
-        char txt[255] = { 0 };
-        snprintf(txt, 254, "%s", lua_tostring(L, -1));
-        djui_lua_error(txt);
     }
     smlua_logline();
     return 0;
