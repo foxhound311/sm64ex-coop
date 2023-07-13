@@ -2,7 +2,7 @@
 
 Video Tutorial:
 
-[![link](https://i.ytimg.com/vi/3B6l8QqMWU4/maxresdefault.jpg)](https://www.youtube.com/watch?v=3B6l8QqMWU4 "[TUTORIAL] How to play sm64ex-coop on Android")
+[![link](https://i.ytimg.com/vi/vjYdVNGRcPg/maxresdefault.jpg)](https://youtu.be/vjYdVNGRcPg "[TUTORIAL] How to play sm64ex-coop on Android")
 
 1. Install the F-Droid App Store by going [here](https://f-droid.org/) and touching the "DOWNLOAD F-DROID" button ([source code](https://github.com/f-droid/fdroidclient)). Then touch the file from your downloads:
 
