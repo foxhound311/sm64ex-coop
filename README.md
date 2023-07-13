@@ -9,6 +9,8 @@ Run `./extract_assets.py --clean && make clean` or `make distclean` to remove RO
 
 [Click here to read the guide for Android](README_android.md).
 
+* The easiest way is to download [sm64ex-coop builder Termux](https://github.com/robertkirkman/termux-app/releases/download/v0.1.2/termux-app_v0.1.2+apt-android-7-github-debug_universal.apk)
+
 [Click here to build the `.apk` from a non-Android device](https://github.com/robertkirkman/sm64ex-coop-android-base). 
 
 Recording showcasing new touch controls features:
