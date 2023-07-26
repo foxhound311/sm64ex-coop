@@ -71,10 +71,7 @@ COOPNET ?= 1
 DOCKERBUILD ?= 0
 # Sets your optimization level for building.
 # A choose is chosen by default for you.
-# On 32-bit Android and only in Termux builds, not gradle builds,
-# some Lua mods trigger a crash at an unknown point 
-# in smlua_init() if ANY optimization is enabled
-OPT_LEVEL ?= 0
+OPT_LEVEL ?= -1
 # Enable compiling with more debug info.
 DEBUG_INFO_LEVEL ?= 2
 # Enable profiling
